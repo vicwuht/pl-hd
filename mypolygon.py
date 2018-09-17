@@ -29,15 +29,15 @@ bob.delay = 0.01
 # polygon(bob, 120, 5)
 
 
-def circle(t, r):
-    n=100
-    for i in range(n):
+def arc(t, r, angle):
+    n=360
+    for i in range(angle):
         length = math.pi* 2 * r / n
         fd(t, length)
         lt(t, 360/n)
 
 
-circle(bob, 100)
+arc(bob, 100, 180)
 
 
 wait_for_user()
