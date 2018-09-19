@@ -1,10 +1,10 @@
 from TurtleWorld import *
 import math
 
-world = TurtleWorld()
-bob = Turtle()
-bob.delay = 0.01
-#封装
+# world = TurtleWorld()
+# bob = Turtle()
+# bob.delay = 0.01
+# #封装
 # print(bob)
 # fd(bob,100)
 # lt(bob)
@@ -67,7 +67,7 @@ def arc(t, r, angle):
     n = int(arc_length / 3) + 1    #要画的线段数量，按照长为3划分
     step_length = arc_length / n
     step_angle = float(angle) /n #单步的角度
-    polyline(t, r, step_length, step_angle)
+    polyline(t, n, step_length, step_angle)
 #arc可以用来重构circle
 
 
@@ -80,7 +80,7 @@ def arc(t, r, angle):
 #         lt(t, 360/n)
 
 
-arc(bob, 100, 180)
+# arc(bob, 100, 180)
 
 
-wait_for_user()
+# wait_for_user()
