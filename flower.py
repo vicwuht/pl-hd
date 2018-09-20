@@ -32,26 +32,26 @@ def move(t, length):
     """Move Turtle (t) forward (length) units without leaving a trail.
     Leaves the pen down.
     """
-    # pu(t)
+    pu(t)
     fd(t, length)
-    # pd(t)
+    pd(t)
 
 
-world = TurtleWorld()
-bob = Turtle()
-bob.delay = 0.01
+# world = TurtleWorld()
+# bob = Turtle()
+# bob.delay = 0.01
+#
+# # draw a sequence of three flowers, as shown in the book.
+# move(bob, -100)
+# flower(bob, 7, 60.0, 60.0)
+#
+# move(bob, 100)
+# flower(bob, 10, 40.0, 80.0)
+#
+# move(bob, 100)
+# flower(bob, 20, 50.0, 20.0)
+#
+# die(bob)
 
-# draw a sequence of three flowers, as shown in the book.
-move(bob, -100)
-flower(bob, 7, 60.0, 60.0)
 
-move(bob, 100)
-flower(bob, 10, 40.0, 80.0)
-
-move(bob, 100)
-flower(bob, 20, 50.0, 20.0)
-
-die(bob)
-
-
-wait_for_user()
+# wait_for_user()
