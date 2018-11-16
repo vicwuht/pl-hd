@@ -4,8 +4,14 @@ def print_n(s, n):
         n = n - 1
 
 
-n1 = int(input("请输入要打印的次数："))
-s2 = input("请输入要打印的字符：")
-print_n(s2, n1)
+# n1 = int(input("请输入要打印的次数："))
+# s2 = input("请输入要打印的字符：")
+# print_n(s2, n1)
 
+while True:
+    line = input('> ')
+    if line == 'done':
+        break
+    print(line)
+print('down')
 
