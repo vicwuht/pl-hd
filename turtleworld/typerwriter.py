@@ -13,7 +13,7 @@ that contains functions with names like draw_a, draw_b, etc.
 """
 
 from time import sleep
-from TurtleWorld import *
+from turtleworld import *
 from letters import *
 # try:
 #     # see if Swampy is installed as a package
