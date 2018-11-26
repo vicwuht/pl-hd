@@ -14,7 +14,7 @@ try:
     from swampy.TurtleWorld import *
 except ImportError:
     # otherwise see if the modules are on the PYTHONPATH
-    from TurtleWorld import *
+    from turtleworld import *
 
 
 def square(t, length):

@@ -1,4 +1,4 @@
-from TurtleWorld import *
+from turtleworld import *
 
 
 def draw(t, length, n):

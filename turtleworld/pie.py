@@ -1,5 +1,5 @@
 from math import *
-from TurtleWorld import *
+from turtleworld import *
 from flower import move
 # fd(bob, 50)
 # lt(bob, 120.0)

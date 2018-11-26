@@ -7,7 +7,7 @@ License: GNU GPLv3 http://www.gnu.org/licenses/gpl.html
 
 """
 
-from TurtleWorld import *
+from turtleworld import *
 
 from polygon import circle, arc
 

@@ -1,4 +1,4 @@
-from TurtleWorld import *
+from turtleworld import *
 
 
 def koch(t, x):

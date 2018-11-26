@@ -1,4 +1,4 @@
-from TurtleWorld import *
+from turtleworld import *
 import math
 
 # world = TurtleWorld()
