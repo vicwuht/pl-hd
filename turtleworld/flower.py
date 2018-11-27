@@ -1,5 +1,5 @@
 from TurtleWorld import *
-from mypolygon import *
+from turtleworld.mypolygon import *
 "这段代码用来画花朵"
 
 

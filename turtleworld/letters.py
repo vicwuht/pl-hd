@@ -9,7 +9,7 @@ License: GNU GPLv3 http://www.gnu.org/licenses/gpl.html
 
 from TurtleWorld import *
 
-from polygon import circle, arc
+from turtleworld.polygon import circle, arc
 
 # LEVEL 0 PRIMITIVES are provided by World.py.
 # They include fd, bk, lt, rt, pu and pd
