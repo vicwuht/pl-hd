@@ -1,9 +1,13 @@
 import unicodedata
 s = 'banana'
+ss = 'it is my banana'
 
-#首字母大写
+#首字母大写  capitalize()
 s1 = s.capitalize()
 print(s1)
+#字符串内所有单词首字母大写  title()
+print(ss.title())
+
 
 #都小写   casefolde和lower的区别在于lower只支持ASCII 也就是 'A-Z'有效。
 # 汉语 & 英语环境下面，继续用 lower()没问题；要处理其它语言且存在大小写情况的时候再用casefold()
@@ -99,7 +103,7 @@ print(unicodedata.numeric('四'))
 # Error: 无
 #
 # isdecimal()
-# True: Unicode数字，，全角数字（双字节）
+# True: Unicode数字，全角数字（双字节）
 # False: 罗马数字，汉字数字
 # Error: byte数字（单字节）
 #
@@ -108,7 +112,36 @@ print(unicodedata.numeric('四'))
 # False: 无
 # Error: byte数字（单字节）
 
+#isidentifier()  判断字符串是否满足标识符定义规则
+#标识符定义规则为：只能是字母或下划线开头、不能包含除数字、字母和下划线以外的任意字符。
+#isspace()   判断字符串是否是空白字符（空格，tab，enter）
+#isprintable()  判断字符串是否是可答应字符串（制表符、换行都是不可打印字符串）
+print(' '.isspace())
+print('\t'.isspace())
+print('\n'.isspace())
+print(''.isspace())
+print('aa bb'.isspace())
+print(' '.isprintable())
+print('\t'.isprintable())
+print('\n'.isprintable())
+print(''.isprintable())
+print('aa\nbb'.isprintable())
+print(' '.isidentifier())
+print('\t'.isidentifier())
+print('\n'.isidentifier())
+print(''.isidentifier())
+print('aa\nbb'.isidentifier())
 
+#islower()  判断字符串是否为小写
+#isupper()  判断字符串是否为大写
+print('good'.islower())
+print('Good'.islower())
+print('GOOD'.isupper())
+print('Good'.isupper())
+
+#join()   将可迭代对象(iterable)中的字符串使用S连接起来。  iterable:string list dict tuple set
+l = 'python'
+print('-'.join(l))
 
 
 
