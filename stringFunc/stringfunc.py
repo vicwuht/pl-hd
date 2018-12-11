@@ -143,6 +143,19 @@ print('Good'.isupper())
 l = 'python'
 print('-'.join(l))
 
+#ljust(width[,fillchar])  左对齐，并用fillchar填充左对齐后多余的width
+#rjust(width[,fillchar])  右对齐，从左侧填充
+print(l.ljust(20, 'x'))
+print(l.rjust(20, 'x'))
+
+#strip(char)  从两端剥离字符
+print('www.baidu.comccc'.strip('wcm'))
+#lstrip(char)从左侧剥离
+print('commmwww.baidu.com'.lstrip('wcm'))
+#rstrip(char) 从右侧剥离
+print('commmwww.baidu.com'.rstrip('wcm'))
+
+
 
 
 
