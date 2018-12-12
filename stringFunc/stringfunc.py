@@ -39,9 +39,13 @@ print("Original string: " + str1);
 print("Defualt exapanded tab: " +  str1.expandtabs());
 print("Double exapanded tab: " +  str1.expandtabs(16));
 
-#find(sub [，start [，end ] ])  查找sub，返回最低索引
+#find(sub [, start [, end ] ])  查找sub，返回最低索引，找不到返回-1
+#rfind(sub[, start[, end]])  返回最高索引
+print('find+++++++++++++++')
 print(s.find('a'))
+print(s.find('c'))
 print(s.find('a', 2))
+print(s.rfind('a', 2))
 
 #format(* args，** kwargs)  类似于%显示
 print("My name is %s and weight is %d kg!" % ('Zara', 21) )
@@ -68,8 +72,11 @@ print("{name} was born in {country}".format_map(Default(name='Guido')))
 #print("{name} was born in {get}".format(name='Guido'))
 #否则format少个参数会不执行
 
-#index( sub [，start [，end ] ] )  类似与find，返回索引，如果找不到，返回-1
-print(s1.find('c'))
+#index( sub [, start [, end ] ] ) 类似与find，返回索引，如果找不到会抛出异常，这一点区别于find
+#rindex( sub [, start [, end ] ] ) 返回最高索引
+print('index+++++++++++++')
+print(s.index('a'))
+print(s.rindex('a'))
 
 #isalnum()  方法检测字符串是否由字母和数字组成。
 strnum = '123456ab'
@@ -145,6 +152,7 @@ print('-'.join(l))
 
 #ljust(width[,fillchar])  左对齐，并用fillchar填充左对齐后多余的width
 #rjust(width[,fillchar])  右对齐，从左侧填充
+print('just+++++++++++++++')
 print(l.ljust(20, 'x'))
 print(l.rjust(20, 'x'))
 
@@ -155,8 +163,38 @@ print('commmwww.baidu.com'.lstrip('wcm'))
 #rstrip(char) 从右侧剥离
 print('commmwww.baidu.com'.rstrip('wcm'))
 
+#str.maketrans() 方法用于给 translate() 方法创建字符映射转换表。是静态行数
+#可以只接受一个参数，此时这个参数是个字典类型
+#对于接受两个参数的最简单的调用方式，第一个参数是字符串，表示需要转换的字符，第二个参数也是字符串，表示转换的目标。两个字符串的长度必须相同，为一一对应的关系。
+#在Python3中可以有第三个参数，表示要删除的字符，也是字符串。
+intab = 'aeiou'
+outtab = '12345'
+deltab = 'thw'
+
+trantab1 = str.maketrans(intab, outtab)
+trantab2 = str.maketrans(intab, outtab, deltab)
+
+test = 'this is a string example ... wow!'
+print(test.translate(trantab1))
+print(test.translate(trantab2))
+
+#partition(sep) 用第一个sep分隔字符串，返回一个含三元素的元祖，第一个元素是sep前部分，第二个元素是sep，第三个元素是sep后部分；
+# 如果没有找到sep，则第一个元素是字符串本身，后两个元素是空字符串
+# rpartition(sep) 用最后一个sep分隔字符串
+#如果没有找到sep，则前两个元素是空字符串，最后一个元素是字符串本身
+str_part = "www.runoob.com"
+print(str_part.partition("."))
+print(str_part.partition("-"))
+print(str_part.rpartition("."))
+print(str_part.rpartition("-"))
 
 
+#replace(old,new,count) 用new替换old，如果有count则替换count次
+str_rep = 'this is my string,this is my string'
+old = 'is'
+new = 'was'
+print(str_rep.replace(old, new))
+print(str_rep.replace(old, new, 2))
 
 
 
