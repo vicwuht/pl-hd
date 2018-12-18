@@ -188,6 +188,16 @@ print(str_part.partition("-"))
 print(str_part.rpartition("."))
 print(str_part.rpartition("-"))
 
+#split(sep = None，maxsplit = -1)  sep为分隔符，默认为所有的空字符，包括空格、换行(\n)、制表符(\t)等。
+#maxsplit-- 分割次数。默认为 -1, 即分隔所有。
+print('1,2,3'.split(','))
+print('1,2,3'.split(',',1))
+print('1   2  3'.split())
+print('1   2  3'.split(maxsplit=1))
+
+#splitlines(keepends) 按照换行符\n分隔  keepends=True则换行符包含在分隔列表中
+print('1   \n2\n3'.splitlines())
+
 
 #replace(old,new,count) 用new替换old，如果有count则替换count次
 str_rep = 'this is my string,this is my string'
