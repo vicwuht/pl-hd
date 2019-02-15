@@ -12,9 +12,7 @@ To use this typewriter, you have to provide a module named letters.py
 that contains functions with names like draw_a, draw_b, etc.
 """
 
-from time import sleep
-from turtleworld import *
-from letters import *
+from turtleworld.letters import *
 # try:
 #     # see if Swampy is installed as a package
 #     from TurtleWorld import *
