@@ -4,7 +4,7 @@ from turtleworld import *
 from flower import move
 =======
 from TurtleWorld import *
-from turtleworld.flower import move
+from turtleworld.flower1 import move
 >>>>>>> origin/master:turtleworld/pie.py
 # fd(bob, 50)
 # lt(bob, 120.0)
