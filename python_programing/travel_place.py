@@ -24,3 +24,7 @@ print("修改列表，按照字母反向顺序排列")
 travel_places.sort(reverse=True)
 print(travel_places)
 
+print("The first three items in the list are:",travel_places[:3])
+print("Three items from the middle of the list are:",travel_places[1:4])
+print("The last three items in the list are:",travel_places[-3:])
+
