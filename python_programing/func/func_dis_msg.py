@@ -19,10 +19,35 @@
 # make_shirt(type="good",size=6)
 # make_shirt()
 
-def descirbe_city(city,country="CHINA"):
-    #打印国家和城市的对应，city、country为形参
-    print("%s is in %s" %(city,country))
-descirbe_city("hefei")
-descirbe_city("Tokyo","JAPAN")
-descirbe_city("fujian")
+# def descirbe_city(city,country="CHINA"):
+#     #打印国家和城市的对应，city、country为形参
+#     print("%s is in %s" %(city,country))
+# descirbe_city("hefei")
+# descirbe_city("Tokyo","JAPAN")
+# descirbe_city("fujian")
+
+# def city_country(city,country="CHINA"):
+#     #此函数接受city，countru两个参数，返回一个字符串，格式如下："city, country"
+#     result = city.title()+", "+country.title()
+#     return result
+# print(city_country('santiago','chile'))
+# print(city_country('shanghai'))
+# print(city_country('tokyo','japan'))
+
+def make_album(singer, album, number=''):
+    #此函数接受歌手名、专辑名两个参数，以及数量的默认参数，返回一个字典
+    if number:
+        dic_album = {'singer':singer.title(), 'album':album.title(),'number':number+1}
+    else:
+        dic_album = {'singer': singer.title(), 'album': album.title()}
+    return dic_album
+while True:
+    singer_name = input("请输入一下歌手姓名：")
+    album_name = input("请输入专辑名：")
+    sings_number = input("请输入专辑中歌曲数量：")
+    print(make_album(singer_name, album_name, int(sings_number)))
+    repeat = input("是否继续录入？(yes/no)\n")
+    if repeat == 'no':
+        print("感谢你的参与！")
+        break
 
