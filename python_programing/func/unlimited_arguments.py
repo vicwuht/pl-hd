@@ -16,6 +16,6 @@
 # user_profile = build_profile('albert', 'einstein',location='princeton',
 #                              field='physics',gender='male')
 # print(user_profile)
-import car
-car = car.make_car('subaru', 'outback', color='blue', tow_package=True)
+from car import make_car as getcar
+car = getcar('subaru', 'outback', color='blue', tow_package=True)
 print(car)
