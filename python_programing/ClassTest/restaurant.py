@@ -5,6 +5,7 @@ class Restaurant():
         """宾馆的两个属性：宾馆名和菜系"""
         self.restaurant_name = restaurant_name
         self.cuisine_type = cuisine_type
+        self.number_served = 0
 
     def describe_restaurant(self):
         """打印宾馆的两个属性"""
@@ -14,11 +15,24 @@ class Restaurant():
         """打印宾馆正在营业的信息"""
         print("餐馆正在营业")
 
+    def number_served_add(self, n):
+        self.number_served += n
+
+    def  number_served(self):
+        return self.number_served
+
+    def increment_number_served(self,n):
+        self.number_served += n
+        return self.number_served
+
 res = Restaurant("全聚德","北京菜")
 print(res.restaurant_name)
 print(res.cuisine_type)
 res.describe_restaurant()
 res.open_restaurant()
+res.number_served_add(5)
+res.increment_number_served(20)
+print("全聚德今天有%s人就餐" %res.number_served)
 res2 = Restaurant("狗不理", "包子")
 res3 = Restaurant("同庆楼", "徽菜")
 res2.describe_restaurant()
