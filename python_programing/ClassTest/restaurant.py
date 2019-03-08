@@ -25,17 +25,29 @@ class Restaurant():
         self.number_served += n
         return self.number_served
 
-res = Restaurant("全聚德","北京菜")
-print(res.restaurant_name)
-print(res.cuisine_type)
-res.describe_restaurant()
-res.open_restaurant()
-res.number_served_add(5)
-res.increment_number_served(20)
-print("全聚德今天有%s人就餐" %res.number_served)
-res2 = Restaurant("狗不理", "包子")
-res3 = Restaurant("同庆楼", "徽菜")
-res2.describe_restaurant()
-res2.open_restaurant()
-res3.describe_restaurant()
-res3.open_restaurant()
+#冰激凌小店
+class IceCreamStand(Restaurant):
+    def __init__(self,restaurant_name,cuisine_type):
+        super().__init__(restaurant_name,cuisine_type)
+        self.flavors = ['milk', 'chocolate', 'strawberry']
+
+    def show_flavors(self):
+        print(self.flavors)
+
+
+# res = Restaurant("全聚德","北京菜")
+# print(res.restaurant_name)
+# print(res.cuisine_type)
+# res.describe_restaurant()
+# res.open_restaurant()
+# res.number_served_add(5)
+# res.increment_number_served(20)
+# print("全聚德今天有%s人就餐" %res.number_served)
+# res2 = Restaurant("狗不理", "包子")
+# res3 = Restaurant("同庆楼", "徽菜")
+# res2.describe_restaurant()
+# res2.open_restaurant()
+# res3.describe_restaurant()
+# res3.open_restaurant()
+
+
