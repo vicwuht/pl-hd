@@ -1,4 +1,4 @@
-filename = "learning_python.txt"
+filename = 'txt_files\learning_python.txt'
 
 #第一种方法，读取所有文件内容一把打印
 # with open(filename) as getfile:
