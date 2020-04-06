@@ -1,6 +1,9 @@
+#打印练习  对于""和''，一般短的单词用''
+
 print("Mary had a little lamb.")
 print("Its fleece was white as {}.".format('snow'))
 print("And everywhere that Mary went")
+#打印10个.
 print("."*10)
 
 #给end1赋值
